@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glow | Custom Neon Sign & LED Typography</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%231a1a24'/><text x='50%' y='55%' font-family='sans-serif' font-size='60' font-weight='bold' fill='%23ff00ff' dominant-baseline='middle' text-anchor='middle'>G</text></svg>">
+  <meta name="description"
+    content="Premium custom neon signs and LED typography manufacturer. Design your own neon sign with our interactive canvas.">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Inter:wght@300;400;500;600;700&family=Pacifico&family=Vampiro+One&family=Yellowtail&display=swap"
+    rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="dark-theme">
+
+  <!-- Header -->
+  <header class="header">
+    <a href="index.html" class="logo">
+      <i class="fa-solid fa-lightbulb logo-icon"></i>
+      Glow
+    </a>
+    <nav class="nav">
+      <div class="dropdown">
+        <button class="dropdown-btn active">Home <i class="fa-solid fa-chevron-down"></i></button>
+        <div class="dropdown-content">
+          <a href="index.html">Home 1</a>
+          <a href="home2.html" class="active">Home 2</a>
+        </div>
+      </div>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+      <div class="nav-actions">
+        <button id="rtl-toggle" class="toggle-btn" aria-label="Toggle RTL/LTR">LTR</button>
+        <button id="theme-toggle" class="toggle-btn" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+    </nav>
+    <div class="header-actions">
+      <button id="mobile-menu-btn" class="mobile-menu-btn toggle-btn" aria-label="Toggle Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero / Mockup Section -->
+  <!-- Centered Hero Section (Home 2) -->
+  <section class="hero-centered">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+      <h1>Illuminate Your Space<br>With Custom Neon</h1>
+      <p>Handcrafted LED neon signs for businesses, weddings, and homes. Design yours online or shop our best sellers.</p>
+      <div class="hero-buttons">
+        <a href="#mockup-section" class="btn-primary">Design Your Own</a>
+        <a href="#categories" class="btn-secondary">Shop Collection</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Category Section -->
+  <section class="category-section" id="categories">
+    <div class="container">
+      <div class="section-header">
+        <h2>Shop By Category</h2>
+        <p>Explore our pre-designed collections for every occasion.</p>
+      </div>
+      <div class="category-grid">
+        <div class="category-card">
+          <div class="category-icon"><i class="fa-solid fa-briefcase"></i></div>
+          <h3>Business & Logos</h3>
+          <p>Elevate your storefront or office.</p>
+        </div>
+        <div class="category-card">
+          <div class="category-icon"><i class="fa-solid fa-ring"></i></div>
+          <h3>Weddings</h3>
+          <p>Make your special day glow.</p>
+        </div>
+        <div class="category-card">
+          <div class="category-icon"><i class="fa-solid fa-gamepad"></i></div>
+          <h3>Gaming Setup</h3>
+          <p>Level up your stream background.</p>
+        </div>
+        <div class="category-card">
+          <div class="category-icon"><i class="fa-solid fa-house"></i></div>
+          <h3>Home Decor</h3>
+          <p>Vibes for your bedroom or living room.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Best Sellers -->
+  <section class="bestsellers-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Best Sellers</h2>
+        <p>Our most loved pre-designed neon signs.</p>
+      </div>
+      <div class="carousel-wrapper">
+        <div class="product-card">
+          <!-- INSERT "GOOD VIBES ONLY" PRODUCT IMAGE BELOW -->
+          <img src=" https://plus.unsplash.com/premium_photo-1677851913233-0758697643c7?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8R09PRCUyMFZJQkVTJTIwT05MWSUyMGluJTIwbmVvbnxlbnwwfHwwfHx8MA%3D%3D" alt="Product">
+          <h4>Good Vibes Only</h4>
+          <p class="price">$199</p>
+        </div>
+        <div class="product-card">
+          <!-- INSERT "TILL DEATH DO US PARTY" PRODUCT IMAGE BELOW -->
+          <img src=" https://images.unsplash.com/photo-1763216981510-050ada2d1068?q=80&w=2390&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Product">
+          <h4>You're Not Dead Yet</h4>
+          <p class="price">$299</p>
+        </div>
+        <div class="product-card">
+          <!-- INSERT "OPEN LATE" PRODUCT IMAGE BELOW -->
+          <img src=" https://plus.unsplash.com/premium_photo-1674169166758-543785cd6f8e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fE9wZW4lMjBMYXRlJTIwbmVvbiUyMHNpZ258ZW58MHx8MHx8fDA%3D" alt="Product">
+          <h4>Open Late</h4>
+          <p class="price">$150</p>
+        </div>
+        <div class="product-card">
+          <!-- INSERT "HUSTLE" PRODUCT IMAGE BELOW -->
+          <img src="https://images.unsplash.com/photo-1537490613201-cabe37b1bf52?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8SHVzdGxlJTIwbmVvbiUyMHNpZ258ZW58MHx8MHx8fDA%3D " alt="Product">
+          <h4>Hustle</h4>
+          <p class="price">$175</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Video Showcase -->
+  <section class="video-showcase">
+    <!-- INSERT VIDEO SHOWCASE BACKGROUND IMAGE URL IN STYLE ATTRIBUTE BELOW -->
+    <div class="video-bg" style="background-image: url('https://plus.unsplash.com/premium_photo-1673468920800-c0bc6e9e674c?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8T3VyJTIwZXhwZXJ0JTIwbmVvbiUyMGRlc2lnbmVycyUyMGFyZSUyMGF2YWlsYWJsZSUyMHZpYSUyMGxpdmUlMjBjaGF0JTIwdG8lMjBhbnN3ZXIlMjBhbnklMjBxdWVzdGlvbnMlMjBhYm91dCUyMHNpemluZyUyQyUyMGZvbnRzJTJDJTIwYmFja2JvYXJkcyUyQyUyMG9yJTIwaW5zdGFsbGF0aW9uLnxlbnwwfHwwfHx8MA%3D%3D ');">
+      <div class="play-overlay">
+        <i class="fa-solid fa-play"></i>
+        <h3>Watch The Process</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Testimonials -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Wall of Love</h2>
+      </div>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>"Absolutely stunning! It totally transformed my gaming room. The quality is unmatched."</p>
+          <h5>- Alex J.</h5>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>"We got a custom sign for our wedding and it was the highlight of our photo booth. Fast shipping too!"</p>
+          <h5>- Sarah & Tom</h5>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>"Our coffee shop needed a bold centerpiece and Glow Neon delivered. Bright and easy to mount."</p>
+          <h5>- The Daily Grind</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Instagram Feed -->
+  <section class="instagram-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Follow The Glow</h2>
+        <p>@GlowCustomNeon</p>
+      </div>
+      <div class="insta-grid">
+        <!-- INSERT INSTAGRAM FEED IMAGE 1 BELOW -->
+        <img src=" https://plus.unsplash.com/premium_photo-1681426322370-c99a29f6f0cd?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8SU5TVEFHUkFNJTIwRkVFRCUyMG5lb24lMjBnbG93fGVufDB8fDB8fHww" alt="Insta">
+        <!-- INSERT INSTAGRAM FEED IMAGE 2 BELOW -->
+        <img src=" https://plus.unsplash.com/premium_photo-1683120785324-2cadf697c220?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8" alt="Insta">
+        <!-- INSERT INSTAGRAM FEED IMAGE 3 BELOW -->
+        <img src=" https://plus.unsplash.com/premium_photo-1733259722327-436196af736d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fHw%3D" alt="Insta">
+        <!-- INSERT INSTAGRAM FEED IMAGE 4 BELOW -->
+        <img src="https://plus.unsplash.com/premium_photo-1681400748503-6a8cd8f6f8be?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D " alt="Insta">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <i class="fa-solid fa-lightbulb logo-icon"></i>
+            Glow
+          </a>
+          <p>Crafting light into art. We manufacture premium, eco-friendly custom LED typography for every space.</p>
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal -->
+        <div class="footer-links">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Refunds</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <ul>
+            <li><a href="mailto:hello@glowneon.com"><i class="fa-solid fa-envelope"></i> hello@glowneon.com</a></li>
+            <li><a href="tel:+15551234567"><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</a></li>
+            <li><i class="fa-solid fa-location-dot"></i> 123 Neon Way, NY 10001</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Glow. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
