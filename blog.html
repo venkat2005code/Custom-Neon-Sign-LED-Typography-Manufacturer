@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | Glow</title>
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%231a1a24'/><text x='50%' y='55%' font-family='sans-serif' font-size='60' font-weight='bold' fill='%23ff00ff' dominant-baseline='middle' text-anchor='middle'>G</text></svg>">
+  <meta name="description" content="Read the latest news and guides from Glow on custom LED neon signs.">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Inter:wght@300;400;500;600;700&family=Pacifico&family=Vampiro+One&family=Yellowtail&display=swap"
+    rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="dark-theme blog-page">
+
+  <!-- Header -->
+  <header class="header">
+    <a href="index.html" class="logo">
+      <i class="fa-solid fa-lightbulb logo-icon"></i>
+      Glow
+    </a>
+    <nav class="nav">
+      <div class="dropdown">
+        <button class="dropdown-btn">Home <i class="fa-solid fa-chevron-down"></i></button>
+        <div class="dropdown-content">
+          <a href="index.html">Home 1</a>
+          <a href="home2.html">Home 2</a>
+        </div>
+      </div>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="blog.html" class="active">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <div class="nav-actions">
+        <button id="rtl-toggle" class="toggle-btn" aria-label="Toggle RTL/LTR">LTR</button>
+        <button id="theme-toggle" class="toggle-btn" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+      <button id="mobile-menu-btn" class="mobile-menu-btn toggle-btn" aria-label="Toggle Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- 1. Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Glow Blog</h1>
+      <p>Insights, guides, and inspiration from the neon experts.</p>
+    </div>
+  </section>
+
+
+  <!-- 2. Blog Section -->
+  <section class="blog-section" style="padding: 80px 0;">
+    <div class="container">
+      <div class="blog-grid">
+        <div class="blog-card">
+          <img src="https://images.unsplash.com/photo-1605101020792-e19a3687ba7a?q=80&w=988&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?q=80&w=900&auto=format&fit=crop" alt="Blog 1">
+          <div class="blog-content">
+            <span class="blog-date">March 15, 2026</span>
+            <h3>How to Choose the Perfect Neon Color</h3>
+            <p>Struggling to pick the right hue for your custom sign? We break down the psychology of color...</p>
+            <a href="#" class="btn-secondary">Read More</a>
+          </div>
+        </div>
+        <div class="blog-card">
+          <img src="https://images.unsplash.com/photo-1603755073847-39852d1b0a72?q=80&w=2831&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?w=900&auto=format&fit=crop" alt="Blog 2">
+          <div class="blog-content">
+            <span class="blog-date">April 02, 2026</span>
+            <h3>Glass vs. LED Neon: What's the Difference?</h3>
+            <p>Explore the pros and cons of traditional glass neon compared to modern LED flex alternatives...</p>
+            <a href="#" class="btn-secondary">Read More</a>
+          </div>
+        </div>
+        <div class="blog-card">
+          <img src="https://plus.unsplash.com/premium_photo-1675278299445-9765d43f8418?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?w=900&auto=format&fit=crop" alt="Blog 3">
+          <div class="blog-content">
+            <span class="blog-date">May 20, 2026</span>
+            <h3>Neon Signs for Weddings: Top 5 Trends</h3>
+            <p>From personalized surnames to romantic quotes, here are the most popular neon sign trends for weddings...</p>
+            <a href="#" class="btn-secondary">Read More</a>
+          </div>
+        </div>
+        <div class="blog-card">
+          <img src="https://images.unsplash.com/photo-1672056121447-578c687eb6d4?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0" alt="Blog 4">
+          <div class="blog-content">
+            <span class="blog-date">June 10, 2026</span>
+            <h3>The Best Font Styles for Neon Typography</h3>
+            <p>From elegant script to bold sans-serifs, discover which font styles translate best into glowing neon art...</p>
+            <a href="#" class="btn-secondary">Read More</a>
+          </div>
+        </div>
+        <div class="blog-card">
+          <img src="https://images.unsplash.com/photo-1574770953617-d04362de815a?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fE5lb24lMjBTaWducyUyMGluJTIwUmV0YWlsJTNBJTIwQm9vc3RpbmclMjBGb290JTIwVHJhZmZpY3xlbnwwfHwwfHx8MA%3D%3D?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0" alt="Blog 5">
+          <div class="blog-content">
+            <span class="blog-date">July 22, 2026</span>
+            <h3>Neon Signs in Retail: Boosting Foot Traffic</h3>
+            <p>Learn how strategic placement of custom neon signs can increase brand visibility and attract more customers...</p>
+            <a href="#" class="btn-secondary">Read More</a>
+          </div>
+        </div>
+        <div class="blog-card">
+          <img src="https://images.unsplash.com/photo-1577361068910-202b72676ecd?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fENhcmluZyUyMGZvciUyMFlvdXIlMjBMRUQlMjBOZW9uJTIwU2lnbnxlbnwwfHwwfHx8MA%3D%3D?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0" alt="Blog 6">
+          <div class="blog-content">
+            <span class="blog-date">August 05, 2026</span>
+            <h3>Caring for Your LED Neon Sign</h3>
+            <p>Maintain the brilliance of your custom sign for years to come with our easy cleaning and maintenance guide...</p>
+            <a href="#" class="btn-secondary">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Blog Categories -->
+  <section class="categories-section" style="padding: 80px 0; background: var(--bg-color);">
+    <div class="container">
+      <div class="section-header" style="text-align: center; margin-bottom: 3rem;">
+        <h2 style="margin-bottom: 1rem;">Explore Topics</h2>
+        <p style="color: var(--text-secondary);">Find articles by category.</p>
+      </div>
+      <div class="category-grid">
+        <div class="category-card">
+          <i class="fa-solid fa-lightbulb category-icon"></i>
+          <h3>Design Tips</h3>
+        </div>
+        <div class="category-card">
+          <i class="fa-solid fa-shop category-icon"></i>
+          <h3>Business & Retail</h3>
+        </div>
+        <div class="category-card">
+          <i class="fa-solid fa-ring category-icon"></i>
+          <h3>Weddings</h3>
+        </div>
+        <div class="category-card">
+          <i class="fa-solid fa-wrench category-icon"></i>
+          <h3>Maintenance</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Newsletter Signup -->
+  <section class="newsletter-section" style="padding: 100px 0; background: var(--surface); text-align: center;">
+    <div class="container">
+      <h2>Join The Glow Club</h2>
+      <p style="color: var(--text-secondary); margin-bottom: 2rem;">Subscribe for exclusive discounts and neon design inspiration.</p>
+      <form class="newsletter-form" style="max-width: 500px; margin: 0 auto; display: flex; gap: 1rem;">
+        <input type="email" placeholder="Enter your email" style="flex: 1;" required>
+        <button type="submit" class="btn-primary" style="border:none; cursor:pointer;">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <i class="fa-solid fa-lightbulb logo-icon"></i>
+            Glow
+          </a>
+          <p>Crafting light into art. We manufacture premium, eco-friendly custom LED typography for every space.</p>
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal -->
+        <div class="footer-links">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Refunds</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <ul>
+            <li><a href="mailto:hello@glowneon.com"><i class="fa-solid fa-envelope"></i> hello@glowneon.com</a></li>
+            <li><a href="tel:+15551234567"><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</a></li>
+            <li><i class="fa-solid fa-location-dot"></i> 123 Neon Way, NY 10001</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Glow. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

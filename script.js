@@ -6,6 +6,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const bodyTag = document.body;
   const themeIcon = themeToggle.querySelector('i');
 
+  // Load saved theme
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'light') {
+    bodyTag.classList.add('light-theme');
+    if (themeIcon) {
+      themeIcon.classList.remove('fa-moon');
+      themeIcon.classList.add('fa-sun');
+    }
+  }
+
   // Initial State from DOM
   const updateRtlToggleText = () => {
     if (htmlTag.getAttribute('dir') === 'ltr') {
@@ -28,11 +38,17 @@ document.addEventListener('DOMContentLoaded', () => {
   themeToggle.addEventListener('click', () => {
     bodyTag.classList.toggle('light-theme');
     if (bodyTag.classList.contains('light-theme')) {
-      themeIcon.classList.remove('fa-moon');
-      themeIcon.classList.add('fa-sun');
+      if (themeIcon) {
+        themeIcon.classList.remove('fa-moon');
+        themeIcon.classList.add('fa-sun');
+      }
+      localStorage.setItem('theme', 'light');
     } else {
-      themeIcon.classList.remove('fa-sun');
-      themeIcon.classList.add('fa-moon');
+      if (themeIcon) {
+        themeIcon.classList.remove('fa-sun');
+        themeIcon.classList.add('fa-moon');
+      }
+      localStorage.setItem('theme', 'dark');
     }
   });
 
