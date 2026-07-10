@@ -956,10 +956,15 @@ body.light-theme .page-header h1 {
 
 .feature-card {
   background: var(--surface);
-  padding: 2rem;
+  padding: 2.5rem 2rem;
   border-radius: 16px;
   border: 1px solid var(--border);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .feature-card i {
@@ -1660,6 +1665,9 @@ img[src=""], img[src=" "], img:not([src]) {
   border-radius: 16px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .blog-card:hover {
@@ -1676,6 +1684,9 @@ img[src=""], img[src=" "], img:not([src]) {
 
 .blog-content {
   padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .blog-date {
@@ -1693,6 +1704,11 @@ img[src=""], img[src=" "], img:not([src]) {
 .blog-content p {
   color: var(--text-secondary);
   margin-bottom: 1.5rem;
+}
+
+.blog-content .btn-secondary {
+  margin-top: auto;
+  align-self: flex-start;
 }
 
 @media (max-width: 992px) {
